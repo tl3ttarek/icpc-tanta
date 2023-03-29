@@ -150,3 +150,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 4.2rem;
 }
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.2rem;
+}
+
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.2rem;
+}
