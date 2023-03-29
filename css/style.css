@@ -101,7 +101,7 @@ main {
 /****************/
 
 .section-about {
-  padding-bottom: 12.8rem;
+  padding-bottom: 14.8rem;
 }
 
 .feature {
@@ -122,4 +122,68 @@ main {
   color: #e9eaeb;
   letter-spacing: -0.5px;
   margin-bottom: 2.4rem;
+}
+
+/********************/
+/* Training Section */
+/********************/
+
+.section-training {
+  padding-bottom: 14.8rem;
+}
+
+.training-card {
+  background-color: #232a30;
+  padding: 4rem 4rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.training-card:hover {
+  transform: translate(0, -0.9rem);
+}
+
+.training-card-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.training-card-text {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #e9eaeb;
+  letter-spacing: -0.5px;
+  margin-bottom: 2.4rem;
+}
+
+.training-resources {
+  font-size: 2.4rem;
+  color: #e9eaeb;
+  display: flex;
+  gap: 2rem;
+}
+
+.training-link-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.training-link:link,
+.training-link:visited {
+  font-size: 2.4rem;
+  color: #e9eaeb;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.training-link:hover,
+.training-link:active {
+  color: #af2a1b;
+}
+
+.training-link-icon {
+  font-size: 3rem;
+  color: #af2a1b;
 }
