@@ -216,8 +216,7 @@ main {
 }
 
 .coach-img {
-  width: 16rem;
-  height: 16rem;
+  width: 90%;
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -246,6 +245,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
+  min-width: 50%;
 }
 
 .gallery-2 {
