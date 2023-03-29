@@ -254,3 +254,144 @@ main {
   transition: all 0.3s;
   overflow: hidden;
 }
+
+/***************/
+/* Stats Section */
+/***************/
+
+/* Contests */
+
+.section-stats {
+  padding-bottom: 14.8rem;
+}
+
+.contests-list {
+  overflow-y: scroll;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contest-card {
+  background-color: #232a30;
+  padding: 3rem 4rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+  margin-right: 2rem;
+}
+
+.contest-card:hover {
+  transform: translate(0.5rem, 0);
+}
+
+.contest-grid {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.contest-card-date {
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contest-card-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.contest-card-icon {
+  font-size: 3.2rem;
+  color: #af2a1b;
+  margin-right: 1rem;
+}
+
+.contest-card-duration {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #e9eaeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contest-card-cta:link,
+.contest-card-cta:visited {
+  font-size: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #af2a1b;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: auto;
+  transition: all 0.3s;
+}
+
+.contest-card-cta:hover,
+.contest-card-cta:active {
+  background-color: #8c2216;
+}
+
+/* Champions */
+
+.champions-list {
+  overflow-y: scroll;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.champion-card {
+  background-color: #232a30;
+  padding: 3rem 4rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+  margin-right: 2rem;
+}
+
+.champion-rank {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-right: 3rem;
+  width: 1.5rem;
+  display: inline-block;
+}
+
+.champion-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-right: 2rem;
+  width: 28rem;
+  display: inline-block;
+}
+
+.champion-problems {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #e9eaeb;
+  margin-right: 2rem;
+  width: 4rem;
+  display: inline-block;
+}
+
+.champion-avg-rank {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #e9eaeb;
+  margin-right: 2rem;
+  width: 4rem;
+  display: inline-block;
+}
+
+.champion-points {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #e9eaeb;
+}
