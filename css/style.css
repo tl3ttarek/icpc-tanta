@@ -284,6 +284,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
+  min-width: 50%;
 }
 
 .gallery-2 {
