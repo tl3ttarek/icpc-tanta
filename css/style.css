@@ -17,6 +17,7 @@
 .header {
   padding: 3rem 4rem;
   display: flex;
+  position: relative;
 }
 
 .logo {
@@ -64,6 +65,46 @@ nav {
   color: white;
 }
 
+.icon-mobile-nav {
+  color: white;
+  font-size: 6rem;
+}
+
+.icon-mobile-nav[name="menu-outline"] {
+  display: block;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  display: none;
+  margin-left: auto;
+}
+
+/* Sticky navigation */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 14rem;
+  background-color: rgba(20, 29, 38, 0.99);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 14rem;
+}
+
+/* .sticky .section-hero {
+  margin-top: 9.6rem;
+} */
+
 /****************/
 /* Hero Section */
 /****************/
@@ -105,6 +146,7 @@ main {
   font-size: 3.6rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
+  text-align: center;
 }
 
 /****************/
@@ -140,7 +182,8 @@ main {
 /********************/
 
 .section-training {
-  padding-bottom: 14.8rem;
+  padding-bottom: 7.2rem;
+  padding-top: 12rem;
 }
 
 .training-card {
@@ -194,17 +237,13 @@ main {
   color: #af2a1b;
 }
 
-.training-link-icon {
-  font-size: 3rem;
-  color: #af2a1b;
-}
-
 /****************/
 /* Gallery Section */
 /****************/
 
 .section-gallery {
-  padding-bottom: 14.8rem;
+  padding-bottom: 7.2rem;
+  padding-top: 12rem;
 }
 
 .coaches {
@@ -216,8 +255,7 @@ main {
 }
 
 .coach-img {
-  width: 16rem;
-  height: 16rem;
+  width: 90%;
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -273,7 +311,8 @@ main {
 /* Contests */
 
 .section-stats {
-  padding-bottom: 14.8rem;
+  padding-bottom: 7.2rem;
+  padding-top: 12rem;
 }
 
 .contests-list {
@@ -362,7 +401,7 @@ main {
 }
 
 .champion-card--header {
-  width: 98%;
+  width: 97.3%;
   display: inline-block;
 }
 
@@ -376,13 +415,16 @@ main {
   border-radius: 15px;
   transition: all 0.3s;
   margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .champion-rank {
   font-size: 2.4rem;
   font-weight: 600;
   margin-right: 3rem;
-  width: 6rem;
+  width: 5%;
   display: inline-block;
   text-align: center;
 }
@@ -390,8 +432,9 @@ main {
 .champion-name {
   font-size: 2.4rem;
   font-weight: 600;
+  line-height: 1.3;
   margin-right: 2rem;
-  width: 36rem;
+  width: 20%;
   display: inline-block;
   text-align: center;
 }
@@ -401,7 +444,7 @@ main {
   line-height: 1.5;
   color: #e9eaeb;
   margin-right: 2rem;
-  width: 16rem;
+  width: 15%;
   display: inline-block;
   text-align: center;
 }
@@ -411,7 +454,8 @@ main {
   line-height: 1.5;
   color: #e9eaeb;
   margin-right: 2rem;
-  width: 16rem;
+  width: 15%;
+  grid-template-rows: repeat(3, auto);
   display: inline-block;
   text-align: center;
 }
@@ -420,7 +464,7 @@ main {
   font-size: 2.4rem;
   line-height: 1.5;
   color: #e9eaeb;
-  width: 16rem;
+  width: 15%;
   text-align: center;
 }
 
@@ -438,7 +482,7 @@ main {
 
 .cta {
   align-items: center;
-  padding: 12rem;
+  padding: 12rem 0;
   border-radius: 15px;
   text-align: center;
 }
@@ -547,4 +591,54 @@ main {
   font-size: 2rem;
   color: #e9eaeb;
   line-height: 1.5;
+}
+
+/* Safari flexbox gap */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
 }

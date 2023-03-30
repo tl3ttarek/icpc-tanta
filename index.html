@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script src="js/script.js" defer></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -31,33 +33,46 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
 
     <title>ICPC Tanta &dash; Compete with us</title>
   </head>
   <body>
     <header class="upper-site">
       <div class="header">
-        <a href="#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">
+        <a href="https://icpc-tanta.live">
           <img class="logo" alt="ICPC Tanta logo" src="img/logo.png" />
         </a>
         <nav>
           <ul class="main-nav-list">
             <li>
-              <a class="main-nav-link" href="#!!!!!!!!!">Training Content</a>
+              <a class="main-nav-link" href="#content">Training Content</a>
             </li>
             <li>
-              <a class="main-nav-link" href="#!!!!!!!!">About Us</a>
+              <a class="main-nav-link" href="#about">About Us</a>
             </li>
             <li>
-              <a class="main-nav-link" href="#!!!!!!!!">Contact</a>
+              <a class="main-nav-link" href="#footer">Contact</a>
             </li>
             <li>
-              <a class="main-nav-link nav-cta" href="#!!!!!!!!!">
+              <a
+                class="main-nav-link nav-cta"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Join us now</a
               >
             </li>
           </ul>
         </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
 
       <section class="section-hero">
@@ -77,13 +92,18 @@
 
           <p class="training-open">Our training is open!</p>
 
-          <a href="#!!!!!!!!!!!!!" class="btn btn--full">Join us now</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+            class="btn btn--full"
+            target="_blank"
+            >Join us now</a
+          >
         </div>
       </section>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <p class="heading-sub">Why Us</p>
           <h2 class="heading-secondary">
@@ -129,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="section-training">
+      <section class="section-training" id="content">
         <div class="container">
           <p class="heading-sub">Newcomers Training Content</p>
           <h2 class="heading-secondary">
@@ -148,14 +168,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -170,14 +194,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -192,14 +220,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -214,14 +246,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -236,14 +272,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -258,14 +298,18 @@
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Resources</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Resources</a
+                  >
                 </div>
                 <div class="training-link-container">
                   <ion-icon
                     name="link-outline"
                     class="training-link-icon"
                   ></ion-icon>
-                  <a href="#!!!!!!!!!!!!" class="training-link">7 Problems</a>
+                  <a href="#" target="_blank" class="training-link"
+                    >7 Problems</a
+                  >
                 </div>
               </div>
             </div>
@@ -273,7 +317,7 @@
         </div>
       </section>
 
-      <section class="section-gallery">
+      <section class="section-gallery" id="team">
         <div class="container grid grid--2-col">
           <div class="coaches">
             <p class="heading-sub">Mentors and Coaches</p>
@@ -361,7 +405,7 @@
         </div>
       </section>
 
-      <section class="section-stats">
+      <section class="section-stats" id="contests">
         <div class="container">
           <p class="heading-sub">Stats</p>
           <div class="">
@@ -384,7 +428,9 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
                 <div class="contest-card">
@@ -403,7 +449,9 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
                 <div class="contest-card">
@@ -422,7 +470,9 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
                 <div class="contest-card">
@@ -441,7 +491,9 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
                 <div class="contest-card">
@@ -460,7 +512,9 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
                 <div class="contest-card">
@@ -479,18 +533,20 @@
                       </ion-icon>
                       1 hour
                     </p>
-                    <a class="contest-card-cta" href="#!!!!!!!!!!!!">Virtual</a>
+                    <a class="contest-card-cta" href="#" target="_blank"
+                      >Virtual</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="our-champions">
+            <!-- <div class="our-champions" id="champions">
               <h2 class="heading-secondary">Our Champions</h2>
               <div class="champion-card champion-card--header">
                 <span class="champion-rank">Rank</span>
                 <span class="champion-name">Name</span>
                 <span class="champion-problems">Problems</span>
-                <span class="champion-avg-rank">Avg Rank</span>
+                <span class="champion-avg-rank">Avg</span>
                 <span class="champion-points">Points</span>
               </div>
               <div class="champions-list">
@@ -565,7 +621,7 @@
                   <span class="champion-points">1320</span>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -581,7 +637,11 @@
                 Expert Mentorship, and Engaging Practice Sessions to Accelerate
                 Your Journey Towards Success!
               </p>
-              <a href="#!!!!!!" class="cta-btn">Join us now</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJohttps://icpc-tanta.livevLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+                class="cta-btn"
+                >Join us now</a
+              >
             </div>
           </div>
         </div>
@@ -590,9 +650,11 @@
     <footer class="footer">
       <div class="container grid grid--4-col">
         <div class="logo-col">
-          <img src="img/logo.png" alt="logo" class="logo logo--footer" />
+          <a href="https://icpc-tanta.live"
+            ><img src="img/logo.png" alt="logo" class="logo logo--footer"
+          /></a>
           <p class="social-text">Stay Connected with Us</p>
-          <div class="social">
+          <div class="social" id="footer">
             <a href="#!!!!!!!!!!!!!!!!" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
@@ -602,7 +664,7 @@
             <a href="#!!!!!!!!!!!!!!!!!!!!" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <a href="#!!!!!!!!!!!!!!!!!1" class="social-link">
+            <a href="#!!!!!!!!!!!!!!!!!" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </div>
@@ -612,20 +674,16 @@
           <h3 class="heading-footer">Community</h3>
           <ul class="footer-list">
             <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link">About us</a>
+              <a href="#about" class="footer-link">About us</a>
             </li>
             <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link">Our Team</a>
+              <a href="#team" class="footer-link">Our Team</a>
             </li>
             <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link"
-                >Past Contests</a
-              >
+              <a href="#contests" class="footer-link">Past Contests</a>
             </li>
             <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link"
-                >Our Champions</a
-              >
+              <a href="#champions" class="footer-link">Our Champions</a>
             </li>
           </ul>
         </div>
@@ -634,7 +692,9 @@
           <h3 class="heading-footer">Join us</h3>
           <ul class="footer-list">
             <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+                class="footer-link"
                 >Join as a student</a
               >
             </li>
