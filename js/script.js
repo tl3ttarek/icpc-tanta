@@ -70,3 +70,6 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+///////////////////////////////////////////////////////////
+// A script to scroll to the links in the navigation bar
