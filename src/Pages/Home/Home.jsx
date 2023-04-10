@@ -3,6 +3,8 @@ import React from "react";
 import "../../styles/global.css";
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/heroSection/HeroSection";
+import AboutSection from "../../components/aboutSection/AboutSection";
+import TrainingSection from "../../components/trainingSection/TrainingSection";
 
 const Home = () => {
   return (
@@ -12,9 +14,9 @@ const Home = () => {
         <HeroSection />
       </header>
       <main>
-        {/* <AboutSection />
         <AboutSection />
-        <GallerySection />
+        <TrainingSection />
+        {/* <GallerySection />
         <CTASection /> */}
       </main>
     </div>
