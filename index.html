@@ -1,943 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="Join our community to improve your competitive programming skills with access to various resources, practice sessions, and experienced mentors. Stay updated with the latest ICPC news and events while exchanging tips and tricks with other members. Elevate your competitive programming journey with us today!"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- ICONS (FAV, ANDROID, APPLE)-->
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/apple-icon.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="description"
+    content="Join our community to improve your competitive programming skills with access to various resources, practice sessions, and experienced mentors. Stay updated with the latest ICPC news and events while exchanging tips and tricks with other members. Elevate your competitive programming journey with us today!" />
 
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+  <!-- ICONS (FAV, ANDROID, APPLE)-->
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/apple-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
-    <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
+  <script src="js/script.js" defer></script>
 
-    <title>ICPC Tanta &dash; Compete with us</title>
-  </head>
-  <body>
-    <div class="popup-background"></div>
-    <header class="upper-site">
-      <div class="header">
-        <a href="https://icpc-tanta.live">
-          <img class="logo" alt="ICPC Tanta logo" src="img/logo.png" />
-        </a>
-        <nav>
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link" href="#content">Training Content</a>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#about">About Us</a>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#footer">Contact</a>
-            </li>
-            <li>
-              <a
-                class="main-nav-link nav-cta"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join us now</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+  <title>ICPC Tanta &dash; Compete with us</title>
+</head>
+
+<body>
+  <div class="popup-background"></div>
+  <header class="upper-site">
+    <div class="header">
+      <a href="https://icpc-tanta.live">
+        <img class="logo" alt="ICPC Tanta logo" src="img/logo.png" />
+      </a>
+      <nav>
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#content">Training Content</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#about">About Us</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#footer">Contact</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+              target="_blank" rel="noopener noreferrer">
+              Join us now</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </div>
+
+    <section class="section-hero">
+      <div class="container hero-container">
+        <h1 class="heading-primary">
+          Achieve Competitive Programming Excellence with the Power of Our
+          Community!
+        </h1>
+
+        <p class="hero-subtext">
+          Join our community to improve your competitive programming skills
+          with access to various resources, practice sessions, and experienced
+          mentors. Stay updated with the latest ICPC news and events while
+          exchanging tips and tricks with other members. Elevate your
+          competitive programming journey with us today!
+        </p>
+
+        <p class="training-open">Our training is open!</p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+          class="btn btn--full" target="_blank">Join us now</a>
       </div>
+    </section>
+  </header>
 
-      <section class="section-hero">
-        <div class="container hero-container">
-          <h1 class="heading-primary">
-            Achieve Competitive Programming Excellence with the Power of Our
-            Community!
-          </h1>
-
-          <p class="hero-subtext">
-            Join our community to improve your competitive programming skills
-            with access to various resources, practice sessions, and experienced
-            mentors. Stay updated with the latest ICPC news and events while
-            exchanging tips and tricks with other members. Elevate your
-            competitive programming journey with us today!
-          </p>
-
-          <p class="training-open">Our training is open!</p>
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
-            class="btn btn--full"
-            target="_blank"
-            >Join us now</a
-          >
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="section-about" id="about">
-        <div class="container">
-          <p class="heading-sub">Why Us</p>
-          <h2 class="heading-secondary">
-            Elevate Your Competitive Programming Experience with Unparalleled
-            Resources and Expert Mentorship
-          </h2>
-          <div class="grid grid--2-col">
-            <div class="feature">
-              <ion-icon name="library-outline" class="feature-icon"></ion-icon>
-              <h3 class="heading-tertiary">Comprehensive Resource Library</h3>
-              <p class="feature-text">
-                Access a wide variety of resources designed to enhance
-                competitive programming skills.
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon name="map-outline" class="feature-icon"></ion-icon>
-              <h3 class="heading-tertiary">Expert Mentorship</h3>
-              <p class="feature-text">
-                Benefit from experienced mentors who offer guidance and support
-                for continuous improvement.
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon name="time-outline" class="feature-icon"></ion-icon>
-              <h3 class="heading-tertiary">Regular Practice Sessions</h3>
-              <p class="feature-text">
-                Participate in practice sessions to build confidence and
-                proficiency in competitive programming.
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon
-                name="newspaper-outline"
-                class="feature-icon"
-              ></ion-icon>
-              <h3 class="heading-tertiary">Latest ICPC Updates</h3>
-              <p class="feature-text">
-                Stay informed about current ICPC news, events, and connect with
-                fellow community members for exchanging tips and tricks.
-              </p>
-            </div>
+  <main>
+    <section class="section-about" id="about">
+      <div class="container">
+        <p class="heading-sub">Why Us</p>
+        <h2 class="heading-secondary">
+          Elevate Your Competitive Programming Experience with Unparalleled
+          Resources and Expert Mentorship
+        </h2>
+        <div class="grid grid--2-col">
+          <div class="feature">
+            <ion-icon name="library-outline" class="feature-icon"></ion-icon>
+            <h3 class="heading-tertiary">Comprehensive Resource Library</h3>
+            <p class="feature-text">
+              Access a wide variety of resources designed to enhance
+              competitive programming skills.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon name="map-outline" class="feature-icon"></ion-icon>
+            <h3 class="heading-tertiary">Expert Mentorship</h3>
+            <p class="feature-text">
+              Benefit from experienced mentors who offer guidance and support
+              for continuous improvement.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon name="time-outline" class="feature-icon"></ion-icon>
+            <h3 class="heading-tertiary">Regular Practice Sessions</h3>
+            <p class="feature-text">
+              Participate in practice sessions to build confidence and
+              proficiency in competitive programming.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon name="newspaper-outline" class="feature-icon"></ion-icon>
+            <h3 class="heading-tertiary">Latest ICPC Updates</h3>
+            <p class="feature-text">
+              Stay informed about current ICPC news, events, and connect with
+              fellow community members for exchanging tips and tricks.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="section-training" id="content">
-        <div class="container">
-          <p class="heading-sub">Newcomers Training Content</p>
-          <h2 class="heading-secondary">
-            Our training is open! Join us now to start your competitive
-            programming journey.
-          </h2>
-          <div class="training-weeks grid grid--2-col">
-            <a class="training-card training-card--0">
-              <p class="training-card-heading">Week 0</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--1">
-              <p class="training-card-heading">Week 1</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
+      </div>
+    </section>
+    <section class="section-training" id="content">
+      <div class="container">
+        <p class="heading-sub">Newcomers Training Content</p>
+        <h2 class="heading-secondary">
+          Our training is open! Join us now to start your competitive
+          programming journey.
+        </h2>
+        <div class="training-weeks grid grid--2-col">
+          <a class="training-card training-card--0">
+            <p class="training-card-heading">Week 0</p>
+            <p class="training-card-text">
+              Programming basics
+            </p>
+          </a>
+          <a class="training-card training-card--1">
+            <p class="training-card-heading">Week 1</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
 
-            <a class="training-card training-card--2">
-              <p class="training-card-heading">Week 2</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--3">
-              <p class="training-card-heading">Week 3</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--4">
-              <p class="training-card-heading">Week 4</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--5">
-              <p class="training-card-heading">Week 5</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--6">
-              <p class="training-card-heading">Week 6</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
-            <a class="training-card training-card--7">
-              <p class="training-card-heading">Week 7</p>
-              <p class="training-card-text">
-                Online Judge, I/O, Data Types, Mod, Conditions
-              </p>
-            </a>
+          <a class="training-card training-card--2">
+            <p class="training-card-heading">Week 2</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+          <a class="training-card training-card--3">
+            <p class="training-card-heading">Week 3</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+          <a class="training-card training-card--4">
+            <p class="training-card-heading">Week 4</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+          <a class="training-card training-card--5">
+            <p class="training-card-heading">Week 5</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+          <a class="training-card training-card--6">
+            <p class="training-card-heading">Week 6</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+          <a class="training-card training-card--7">
+            <p class="training-card-heading">Week 7</p>
+            <!-- <p class="training-card-text">
+              Online Judge, I/O, Data Types, Mod, Conditions
+            </p> -->
+          </a>
+        </div>
+        <div class="popup-screens">
+          <div class="popup-screen popup-screen--0">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 0 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="https://vjudge.net/contest/552468">
+                <p class="problem-title">Problems</p>
+                <p class="problem-name">Week 1 sheet</p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=EN1kX4HIPgs&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=5&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">
+                  Watch: Printing
+                </p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=I11mfEdfh-4&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=6&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Watch: Errors</p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=ncwIeshX7Kk&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=7&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">
+                  Watch: Data Types and Variables
+                </p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=qmHE9QISuVQ&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=8&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">
+                  Watch: Logical Operators
+                </p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=jJVaDl_dePk&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=9&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">
+                  Watch: Division and Modulus
+                </p>
+              </a>
+              <a class="popup-card resource"
+                href="https://www.youtube.com/watch?v=xmjB7u7mHWE&list=PLPt2dINI2MIbwnEoeHZnUHeUHjTd8x4F3&index=10&pp=iAQB">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">
+                  Watch: Selection
+                </p>
+              </a>
+            </div>
           </div>
-          <div class="popup-screens">
-            <div class="popup-screen popup-screen--0">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 0 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          <div class="popup-screen popup-screen--1 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 1 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--1 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 1 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--2 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 2 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--2 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 2 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--3 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 3 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--3 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 3 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--4 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 4 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--4 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 4 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--5 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 5 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--5 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 5 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--6 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 6 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
-            <div class="popup-screen popup-screen--6 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 6 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
-            </div>
-            <div class="popup-screen popup-screen--7 popup-not-av">
-              <ion-icon
-                name="close-outline"
-                class="popup-close--icon"
-              ></ion-icon>
-              <h2 class="heading-secondary">
-                Week 7 &dash; Problems &amp; Resources
-              </h2>
-              <div class="problems-resources">
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card resource" href="#">
-                  <p class="problem-title">Problem</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-                <a class="popup-card problem" href="#">
-                  <p class="problem-title">Resource</p>
-                  <p class="problem-name">Hello world!</p>
-                </a>
-              </div>
+          </div>
+          <div class="popup-screen popup-screen--7 popup-not-av">
+            <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+            <h2 class="heading-secondary">
+              Week 7 &dash; Problems &amp; Resources
+            </h2>
+            <div class="problems-resources">
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card resource" href="#">
+                <p class="problem-title">Problem</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
+              <a class="popup-card problem" href="#">
+                <p class="problem-title">Resource</p>
+                <p class="problem-name">Hello world!</p>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-gallery" id="team">
-        <div class="container grid grid--2-col">
-          <div class="coaches">
-            <p class="heading-sub">Mentors and Coaches</p>
-            <h2 class="heading-secondary">Meet our team</h2>
-            <div class="coaches-grid grid grid--3-col">
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ahmed-rashed.png"
-                />
-                <p class="coach-name">Ahmed Rashed</p>
-                <p class="coach-title">Head</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/talaat-taha.jpg"
-                />
-                <p class="coach-name">Talaat Taha</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/mohab-ahmed.jpg"
-                />
-                <p class="coach-name">Mohab Ahmed</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img alt="coach" class="coach-img" src="img/profile.png" />
-                <p class="coach-name">Nourhan Abosaeed</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ammar-younes.jpg"
-                />
-                <p class="coach-name">Ammar Younes</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/bishoy-magdy.jpg"
-                />
-                <p class="coach-name">Bishoy Magdy</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ahmed-harby.jpg"
-                />
-                <p class="coach-name">Mohamed Harby</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/abdelrahman-khattab.jpeg"
-                />
-                <p class="coach-name">Abd El-Rahman Khattab</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img alt="coach" class="coach-img" src="img/profile.png" />
-                <p class="coach-name">Sara Hamza</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img alt="coach" class="coach-img" src="img/team/elfeky.jpeg" />
-                <p class="coach-name">Abd El-Rahman Elfeky</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/hazem-elakabawy.jpg"
-                />
-                <p class="coach-name">Hazem Elakbawy</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/sayed-abdelmongey.jpg"
-                />
-                <p class="coach-name">Sayed Abd Elmongey</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img alt="coach" class="coach-img" src="img/profile.png" />
-                <p class="coach-name">Mariam Kilany</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ahmed-mashaal.jpg"
-                />
-                <p class="coach-name">Ahmed Mashaal</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img alt="coach" class="coach-img" src="img/profile.png" />
-                <p class="coach-name">Rahma Abo Eldahab</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/hossam-eissa.jpeg"
-                />
-                <p class="coach-name">Hossam Eissa</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ahmed-tamer.jpg"
-                />
-                <p class="coach-name">Ahmed Tamer</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/ayman-selim.jpg"
-                />
-                <p class="coach-name">Ayman Selim</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/belal-ahmed.jpg"
-                />
-                <p class="coach-name">Belal Ahmed</p>
-                <p class="coach-title">Mentor</p>
-              </div>
-              <div class="coach">
-                <img
-                  alt="coach"
-                  class="coach-img"
-                  src="img/team/abdallah-elagamy.jpg"
-                />
-                <p class="coach-name">Abd Allah Elagamy</p>
-                <p class="coach-title">Mentor</p>
-              </div>
+    <section class="section-gallery" id="team">
+      <div class="container grid grid--2-col">
+        <div class="coaches">
+          <p class="heading-sub">Mentors and Coaches</p>
+          <h2 class="heading-secondary">Meet our team</h2>
+          <div class="coaches-grid grid grid--3-col">
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ahmed-rashed.png" />
+              <p class="coach-name">Ahmed Rashed</p>
+              <p class="coach-title">Head</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/talaat-taha.jpg" />
+              <p class="coach-name">Talaat Taha</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/mohab-ahmed.jpg" />
+              <p class="coach-name">Mohab Ahmed</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/profile.png" />
+              <p class="coach-name">Nourhan Abosaeed</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ammar-younes.jpg" />
+              <p class="coach-name">Ammar Younes</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/bishoy-magdy.jpg" />
+              <p class="coach-name">Bishoy Magdy</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ahmed-harby.jpg" />
+              <p class="coach-name">Mohamed Harby</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/abdelrahman-khattab.jpeg" />
+              <p class="coach-name">Abd El-Rahman Khattab</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/profile.png" />
+              <p class="coach-name">Sara Hamza</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/elfeky.jpeg" />
+              <p class="coach-name">Abd El-Rahman Elfeky</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/hazem-elakabawy.jpg" />
+              <p class="coach-name">Hazem Elakbawy</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/sayed-abdelmongey.jpg" />
+              <p class="coach-name">Sayed Abd Elmongey</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/profile.png" />
+              <p class="coach-name">Mariam Kilany</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ahmed-mashaal.jpg" />
+              <p class="coach-name">Ahmed Mashaal</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/profile.png" />
+              <p class="coach-name">Rahma Abo Eldahab</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/hossam-eissa.jpeg" />
+              <p class="coach-name">Hossam Eissa</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ahmed-tamer.jpg" />
+              <p class="coach-name">Ahmed Tamer</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/ayman-selim.jpg" />
+              <p class="coach-name">Ayman Selim</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/belal-ahmed.jpg" />
+              <p class="coach-name">Belal Ahmed</p>
+              <p class="coach-title">Mentor</p>
+            </div>
+            <div class="coach">
+              <img alt="coach" class="coach-img" src="img/team/abdallah-elagamy.jpg" />
+              <p class="coach-name">Abd Allah Elagamy</p>
+              <p class="coach-title">Mentor</p>
             </div>
           </div>
+        </div>
+        <div class="gallery">
+          <p class="heading-sub" style="visibility: hidden">Our Gallery</p>
+          <h2 class="heading-secondary">Our Gallery</h2>
           <div class="gallery">
-            <p class="heading-sub" style="visibility: hidden">Our Gallery</p>
-            <h2 class="heading-secondary">Our Gallery</h2>
-            <div class="gallery">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    alt="gallery"
-                    class="gallery-img"
-                    src="img/community/community-pic-1.jpg"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    alt="gallery"
-                    class="gallery-img"
-                    src="img/community/community-pic-2.jpg"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    alt="gallery"
-                    class="gallery-img"
-                    src="img/community/community-pic-3.jpg"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    alt="gallery"
-                    class="gallery-img"
-                    src="img/community/community-pic-4.jpg"
-                  />
-                </div>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img alt="gallery" class="gallery-img" src="img/community/community-pic-1.jpg" />
+              </div>
+              <div class="gallery-item">
+                <img alt="gallery" class="gallery-img" src="img/community/community-pic-2.jpg" />
+              </div>
+              <div class="gallery-item">
+                <img alt="gallery" class="gallery-img" src="img/community/community-pic-3.jpg" />
+              </div>
+              <div class="gallery-item">
+                <img alt="gallery" class="gallery-img" src="img/community/community-pic-4.jpg" />
               </div>
             </div>
-          </div>
-          <div class="gallery-2">
-            <div class="gallery-grid-2"></div>
           </div>
         </div>
-      </section>
+        <div class="gallery-2">
+          <div class="gallery-grid-2"></div>
+        </div>
+      </div>
+    </section>
 
-      <section class="section-stats" id="contests">
-        <div class="container">
-          <p class="heading-sub">Stats</p>
-          <div class="">
-            <div class="past-contests">
-              <h2 class="heading-secondary">Past Contests</h2>
-              <div class="contests-list">
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+    <section class="section-stats" id="contests">
+      <div class="container">
+        <p class="heading-sub">Stats</p>
+        <div class="">
+          <div class="past-contests">
+            <h2 class="heading-secondary">Past Contests</h2>
+            <div class="contests-list">
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+              </div>
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+              </div>
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+              </div>
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+              </div>
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
-                <div class="contest-card">
-                  <p class="contest-card-heading">Team Formation Contest</p>
-                  <div class="contest-grid">
-                    <p class="contest-card-date">
-                      <ion-icon
-                        name="calendar-outline"
-                        class="contest-card-icon"
-                      >
-                      </ion-icon>
-                      1/1/2021
-                    </p>
-                    <p class="contest-card-duration">
-                      <ion-icon name="time-outline" class="contest-card-icon">
-                      </ion-icon>
-                      1 hour
-                    </p>
-                    <a class="contest-card-cta" href="#" target="_blank"
-                      >Virtual</a
-                    >
-                  </div>
+              </div>
+              <div class="contest-card">
+                <p class="contest-card-heading">Team Formation Contest</p>
+                <div class="contest-grid">
+                  <p class="contest-card-date">
+                    <ion-icon name="calendar-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1/1/2021
+                  </p>
+                  <p class="contest-card-duration">
+                    <ion-icon name="time-outline" class="contest-card-icon">
+                    </ion-icon>
+                    1 hour
+                  </p>
+                  <a class="contest-card-cta" href="#" target="_blank">Virtual</a>
                 </div>
               </div>
             </div>
-            <!-- <div class="our-champions" id="champions">
+          </div>
+          <!-- <div class="our-champions" id="champions">
               <h2 class="heading-secondary">Our Champions</h2>
               <div class="champion-card champion-card--header">
                 <span class="champion-rank">Rank</span>
@@ -1019,100 +874,89 @@
                 </div>
               </div>
             </div> -->
-          </div>
-        </div>
-      </section>
-      <section class="section-cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-textbox">
-              <p class="heading-sub">Start now</p>
-              <h2 class="heading-secondary">Don't miss this opportunity</h2>
-              <p class="cta-text">
-                Unlock Your Full Potential in Competitive Programming: Join Our
-                Thriving Community Today and Gain Access to Exclusive Resources,
-                Expert Mentorship, and Engaging Practice Sessions to Accelerate
-                Your Journey Towards Success!
-              </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
-                class="cta-btn"
-                >Join us now</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container grid grid--4-col">
-        <div class="logo-col">
-          <a href="https://icpc-tanta.live"
-            ><img src="img/logo.png" alt="logo" class="logo logo--footer"
-          /></a>
-          <p class="social-text">Stay Connected with Us</p>
-          <div class="social" id="footer">
-            <a href="#!!!!!!!!!!!!!!!!" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="#!!!!!!!!!!!!!!!!!!" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="#!!!!!!!!!!!!!!!!!!!!" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="#!!!!!!!!!!!!!!!!!" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </div>
-        </div>
-
-        <div class="community-col">
-          <h3 class="heading-footer">Community</h3>
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a href="#about" class="footer-link">About us</a>
-            </li>
-            <li class="footer-list-item">
-              <a href="#team" class="footer-link">Our Team</a>
-            </li>
-            <li class="footer-list-item">
-              <a href="#contests" class="footer-link">Past Contests</a>
-            </li>
-            <li class="footer-list-item">
-              <a href="#champions" class="footer-link">Our Champions</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cta-col">
-          <h3 class="heading-footer">Join us</h3>
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
-                class="footer-link"
-                >Join as a student</a
-              >
-            </li>
-            <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link"
-                >Join as a coach</a
-              >
-            </li>
-            <li class="footer-list-item">
-              <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link"
-                >Join as a sponsor</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright">
-          Copyright &copy; <span class="year">2023</span> ICPC Tanta. All rights
-          reserved.
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-textbox">
+            <p class="heading-sub">Start now</p>
+            <h2 class="heading-secondary">Don't miss this opportunity</h2>
+            <p class="cta-text">
+              Unlock Your Full Potential in Competitive Programming: Join Our
+              Thriving Community Today and Gain Access to Exclusive Resources,
+              Expert Mentorship, and Engaging Practice Sessions to Accelerate
+              Your Journey Towards Success!
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+              class="cta-btn">Join us now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container grid grid--4-col">
+      <div class="logo-col">
+        <a href="https://icpc-tanta.live"><img src="img/logo.png" alt="logo" class="logo logo--footer" /></a>
+        <p class="social-text">Stay Connected with Us</p>
+        <div class="social" id="footer">
+          <a href="#!!!!!!!!!!!!!!!!" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#!!!!!!!!!!!!!!!!!!" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#!!!!!!!!!!!!!!!!!!!!" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#!!!!!!!!!!!!!!!!!" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="community-col">
+        <h3 class="heading-footer">Community</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="#about" class="footer-link">About us</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#team" class="footer-link">Our Team</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#contests" class="footer-link">Past Contests</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#champions" class="footer-link">Our Champions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cta-col">
+        <h3 class="heading-footer">Join us</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+              class="footer-link">Join as a student</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link">Join as a coach</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#!!!!!!!!!!!!!!!!!!!!!!" class="footer-link">Join as a sponsor</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        Copyright &copy; <span class="year">2023</span> ICPC Tanta. All rights
+        reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

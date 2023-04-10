@@ -360,6 +360,7 @@ main {
   font-weight: 600;
   color: #fff;
   margin-left: auto;
+  text-align: right;
 }
 
 .popup-not-av--icon {
