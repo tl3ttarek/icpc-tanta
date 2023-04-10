@@ -93,7 +93,7 @@ nav {
   width: 100%;
   height: 14rem;
   background-color: rgba(20, 29, 38, 0.99);
-  z-index: 999;
+  z-index: 997;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
@@ -151,7 +151,7 @@ main {
 
 /****************/
 /* About Section */
-/****************/
+/************999****/
 
 .section-about {
   padding: 14.8rem 0;
@@ -191,6 +191,7 @@ main {
   padding: 4rem 4rem;
   border-radius: 15px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .training-card:hover {
@@ -208,7 +209,6 @@ main {
   line-height: 1.5;
   color: #e9eaeb;
   letter-spacing: -0.5px;
-  margin-bottom: 2.4rem;
 }
 
 .training-resources {
@@ -235,6 +235,159 @@ main {
 .training-link:hover,
 .training-link:active {
   color: #af2a1b;
+}
+
+/*****************/
+/* Pop up screen */
+/*****************/
+
+.popup-screen--open-0 .popup-background,
+.popup-screen--open-1 .popup-background,
+.popup-screen--open-2 .popup-background,
+.popup-screen--open-3 .popup-background,
+.popup-screen--open-4 .popup-background,
+.popup-screen--open-5 .popup-background,
+.popup-screen--open-6 .popup-background,
+.popup-screen--open-7 .popup-background,
+.popup-screen--open-8 .popup-background,
+.popup-screen--open-9 .popup-background,
+.popup-screen--open-10 .popup-background,
+.popup-screen--open-11 .popup-background,
+.popup-screen--open-12 .popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 29, 38, 0.98);
+  z-index: 998;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-background {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 80%;
+  z-index: 999;
+  padding: 5rem;
+  background-color: #232a30;
+  border-radius: 15px;
+  margin-top: 10vh;
+  margin-left: 25%;
+}
+
+.popup-screen[class="popup-not-av"] {
+  padding: 0;
+}
+
+.popup-screen--0,
+.popup-screen--1,
+.popup-screen--2,
+.popup-screen--3,
+.popup-screen--4,
+.popup-screen--5,
+.popup-screen--6,
+.popup-screen--7,
+.popup-screen--8,
+.popup-screen--9,
+.popup-screen--10,
+.popup-screen--11,
+.popup-screen--12 {
+  transform: translateX(200rem);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-screen--open-0 .popup-screen--0,
+.popup-screen--open-1 .popup-screen--1,
+.popup-screen--open-2 .popup-screen--2,
+.popup-screen--open-3 .popup-screen--3,
+.popup-screen--open-4 .popup-screen--4,
+.popup-screen--open-5 .popup-screen--5,
+.popup-screen--open-6 .popup-screen--6,
+.popup-screen--open-7 .popup-screen--7,
+.popup-screen--open-8 .popup-screen--8,
+.popup-screen--open-9 .popup-screen--9,
+.popup-screen--open-10 .popup-screen--10,
+.popup-screen--open-11 .popup-screen--11,
+.popup-screen--open-12 .popup-screen--12 {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.problems-resources {
+  overflow-y: scroll;
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.popup-card {
+  display: flex;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-right: 3rem;
+  gap: 7rem;
+  align-items: center;
+}
+
+.popup-card:hover {
+  transform: translate(0.9rem, 0);
+}
+
+.problem-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #8c2216;
+  width: 12rem;
+}
+
+.problem-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: auto;
+}
+
+.popup-not-av--icon {
+  font-size: 7.2rem;
+  color: #af2a1b;
+  margin-bottom: 2rem;
+}
+
+.popup-not-av--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: #af2a1b;
+  font-weight: 600;
+}
+
+.popup-close--icon {
+  position: absolute;
+  top: 3.6rem;
+  right: 3.6rem;
+  font-size: 5.6rem;
+  color: #af2a1b;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 /****************/
@@ -269,13 +422,14 @@ main {
   font-weight: 600;
   margin-top: 2.4rem;
   margin-bottom: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .coach-title {
   font-size: 2rem;
   color: #e9eaeb;
   margin-bottom: 2.4rem;
+  line-height: 1.4;
 }
 
 /* Gallery */

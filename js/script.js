@@ -72,4 +72,42 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
-// A script to scroll to the links in the navigation bar
+// Popup not Available
+
+const popupNotAvailable = document.querySelectorAll(".popup-not-av");
+console.log(popupNotAvailable);
+
+for (let i = 0; i < popupNotAvailable.length; i++) {
+  popupNotAvailable[i].innerHTML = `
+  <ion-icon name="close-outline" class="popup-close--icon"></ion-icon>
+  <div class="popup-not-av--content">
+  <ion-icon name="time-outline" class="popup-not-av--icon"></ion-icon>
+    <div>This week is not available yet. Please check back later.</div>
+  </div>
+`;
+}
+
+///////////////////////////////////////////////////////////
+// Backdrop click + Close button + Training card click
+
+const backdrop = document.querySelector(".popup-background");
+const body = document.querySelector("body");
+const closeBtn = document.querySelectorAll(".popup-close--icon");
+const WEEKS = document.querySelectorAll(".training-card").length;
+
+backdrop.addEventListener("click", function () {
+  body.className = "sticky";
+});
+
+for (let i = 0; i < closeBtn.length; i++) {
+  closeBtn[i].addEventListener("click", function () {
+    body.className = "sticky";
+  });
+}
+
+for (let i = 0; i < WEEKS; i++) {
+  const trainingCard = document.querySelector(`.training-card--${i}`);
+  trainingCard.addEventListener("click", function (e) {
+    body.classList.add(`popup-screen--open-${i}`);
+  });
+}

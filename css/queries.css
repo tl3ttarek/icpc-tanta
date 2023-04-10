@@ -11,6 +11,11 @@
     grid-column: 2;
     margin-left: 6.4rem;
   }
+
+  .popup-screen {
+    width: 60%;
+    margin-left: 20%;
+  }
 }
 
 @media (max-width: 69em) {
@@ -97,6 +102,11 @@
   .training-weeks {
     grid-template-columns: 1fr;
   }
+
+  .popup-screen {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 
 @media (max-width: 50em) {
@@ -132,6 +142,11 @@
   .section-about .grid {
     grid-template-columns: 1fr;
   }
+
+  .popup-screen {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 44em) {
@@ -141,6 +156,11 @@
 
   .container {
     padding: 0 3.2rem;
+  }
+
+  .popup-screen {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
@@ -165,6 +185,21 @@
     grid-column: 2;
     grid-row: 1 / 3;
     align-self: center;
+  }
+
+  .problem-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .popup-card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .problem-name {
+    margin-left: 0;
+    text-align: center;
   }
 }
 
