@@ -1,12 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import { IonIcon } from "@ionic/react";
-import { linkOutline, closeOutline } from "ionicons/icons";
+import React, { useState, useEffect } from "react";
 import "../../styles/global.css";
-import { Link } from "react-router-dom";
-
 import { weeks } from "../../data/weeks";
 import Popup from "../popup/Popup";
-import useClickOutside from "../../custom/useClickOutside";
 
 const TrainingCard = ({ week, onClick }) => {
   return (
