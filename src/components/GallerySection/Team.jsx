@@ -16,10 +16,10 @@ function Team() {
 
         <div className="coaches-grid grid grid--3-col">
         {
-            team.map((coach)=>{
+            team.map((coach,index)=>{
                 return(
-                    <div className="coach">
-                        <img src={coach.img} alt="coach" className="coach-img" />
+                    <div className="coach" key={index}>
+                        <img src={coach.img} alt="coach" className="coach-img"  />
                         <p className="coach-name">{coach.name}</p>
                         <p className="coach-title">{coach.title}</p>
                     </div>

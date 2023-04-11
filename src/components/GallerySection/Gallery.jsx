@@ -10,9 +10,9 @@ function Gallery() {
                 <div className="gallery">
                 <div className="gallery-grid">
                 {
-                    community.map(item=>{
+                    community.map((item,index)=>{
                         return(
-                    <div className="gallery-item">
+                    <div className="gallery-item" key={index}>
                         <img
                             alt="gallery"
                             className="gallery-img"
