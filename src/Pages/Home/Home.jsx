@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/heroSection/HeroSection";
 import GallerySection from "../../components/GallerySection/GallerySection";
 import CTA from "../../components/CTA/CTA";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <GallerySection />
         <CTA/>
       </main>
+      <Footer/>
     </div>
   );
 };
