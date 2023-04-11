@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import { HashLink } from "react-router-hash-link";
+// import { animateScroll as scroll } from "react-scroll";
 
+import "../../styles/global.css";
+// import "./Navbar.css";
 import Logo from "../../assets/img/logo.png";
+
+import { useGetWidth } from "../../custom/useDimension";
 
 import { IonIcon } from "@ionic/react";
 import { menuOutline, closeOutline } from "ionicons/icons";
@@ -11,8 +16,10 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
-    setIsNavOpen((prevState) => !prevState);
+    setIsNavOpen(!isNavOpen);
   };
+
+  const width = useGetWidth();
 
   return (
     <div>
@@ -23,42 +30,53 @@ const Navbar = () => {
         <nav>
           <ul className="main-nav-list">
             <li>
-              <Link className="main-nav-link" to="#content">
+              <HashLink className="main-nav-link" smooth to="/#content">
                 Training Content
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link className="main-nav-link" to="#about">
+              <HashLink className="main-nav-link" smooth to="/#about">
                 About Us
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link className="main-nav-link" to="#footer">
+              <HashLink className="main-nav-link" smooth to="/#footer">
                 Contact
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link
+              <a
                 className="main-nav-link nav-cta"
-                to="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdwA_SDcWJovLzzrGYAgMGnK4W9yZ-X4ypSGOPqzTpZ1DWM5w/viewform?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Join us now
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
-        <button className="btn-mobile-nav" onClick={toggleNav}>
-          <IonIcon
-            className="icon-mobile-nav"
-            icon={isNavOpen ? closeOutline : menuOutline}
-            name={isNavOpen ? "close-outline" : "menu-outline"}
-          />
-        </button>
+        {width < 1104 && (
+          <div onClick={toggleNav} style={toggleButtonStyle}>
+            {isNavOpen ? (
+              <IonIcon icon={closeOutline} />
+            ) : (
+              <IonIcon icon={menuOutline} />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default Navbar;
+
+const toggleButtonStyle = {
+  cursor: "pointer",
+  position: "absolute",
+  top: "5rem",
+  right: "5rem",
+  fontSize: "6rem",
+  color: "#fff",
+};
