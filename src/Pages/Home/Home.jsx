@@ -4,6 +4,7 @@ import "../../styles/global.css";
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/heroSection/HeroSection";
 import GallerySection from "../../components/GallerySection/GallerySection";
+import CTA from "../../components/CTA/CTA";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         {/*<AboutSection />
         <AboutSection />*/}
         <GallerySection />
-        {/*<CTASection />*/}
+        <CTA/>
       </main>
     </div>
   );
