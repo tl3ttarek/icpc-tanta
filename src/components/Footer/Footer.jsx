@@ -70,7 +70,8 @@ function Footer() {
             </div>
 
             <div className="copyright">
-            Copyright &copy; <span className="year">2023</span> 
+            Copyright &copy; 
+            <span className="year"> 2023 </span> 
                 ICPC Tanta. All rights reserved.
             </div>
         </div>

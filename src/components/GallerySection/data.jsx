@@ -36,6 +36,11 @@ export const team = [
         img:require("../../assets/img/team/ahmed-harby.jpg")
     },
     {
+        name:"Abd El-Rahman Khattab",
+        title:"Mentor",
+        img:require("../../assets/img/team/abdelrahman-khattab.jpeg")
+    },
+    {
         name:"Sara Hamza",
         title:"Mentor",
         img:require("../../assets/img/profile.png")
