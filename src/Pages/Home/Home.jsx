@@ -9,7 +9,7 @@ import TrainingSection from "../../components/trainingSection/TrainingSection";
 const Home = () => {
   return (
     <div>
-      <header class="upper-site">
+      <header className="upper-site">
         <Navbar />
         <HeroSection />
       </header>

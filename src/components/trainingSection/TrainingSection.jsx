@@ -1,15 +1,48 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IonIcon } from "@ionic/react";
-import {
-  libraryOutline,
-  mapOutline,
-  timeOutline,
-  newspaperOutline,
-} from "ionicons/icons";
+import { linkOutline, closeOutline } from "ionicons/icons";
 import "../../styles/global.css";
 import { Link } from "react-router-dom";
 
+import { weeks } from "../../data/weeks";
+import Popup from "../popup/Popup";
+import useClickOutside from "../../custom/useClickOutside";
+
+const TrainingCard = ({ week, onClick }) => {
+  return (
+    <div className="training-card" onClick={onClick}>
+      <p className="training-card-heading">Week {week.id}</p>
+      <p className="training-card-text">{week.title}</p>
+    </div>
+  );
+};
+
 const TrainingSection = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedWeekId, setSelectedWeekId] = useState(null);
+
+  const openPopup = (weekId) => {
+    setSelectedWeekId(weekId);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const onCloseClicked = () => {
+    setSelectedWeekId(null);
+    closePopup();
+  };
+
+  useEffect(() => {
+    if (isPopupOpen) {
+      document.body.classList.add("popup-screen--open");
+    } else {
+      document.body.classList.remove("popup-screen--open");
+    }
+  }, [isPopupOpen]);
+
   return (
     <section className="section-training" id="content">
       <div className="container">
@@ -19,33 +52,21 @@ const TrainingSection = () => {
           programming journey.
         </h2>
         <div className="training-weeks grid grid--2-col">
-          <div className="training-card">
-            <p className="training-card-heading">Week 0</p>
-            <p className="training-card-text">
-              Online Judge, I/O, Data Types, Mod, Conditions
-            </p>
-            <div className="training-resources">
-              <div className="training-link-container">
-                <ion-icon
-                  name="link-outline"
-                  className="training-link-icon"
-                ></ion-icon>
-                <Link to="#" target="_blank" className="training-link">
-                  7 Resources
-                </Link>
-              </div>
-              <div className="training-link-container">
-                <ion-icon
-                  name="link-outline"
-                  className="training-link-icon"
-                ></ion-icon>
-                <Link to="#" target="_blank" className="training-link">
-                  7 Problems
-                </Link>
-              </div>
-            </div>
-          </div>
+          {weeks.map((week) => (
+            <TrainingCard
+              key={week.id}
+              week={week}
+              onClick={() => openPopup(week.id)}
+            />
+          ))}
         </div>
+        {isPopupOpen && (
+          <Popup
+            weekId={selectedWeekId}
+            onClose={onCloseClicked}
+            // popupRef={popupRef}
+          />
+        )}
       </div>
     </section>
   );
