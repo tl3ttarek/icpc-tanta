@@ -97,7 +97,7 @@ const Popup = ({ weekId, onClose }) => {
             weekData.problems &&
             weekData.problems.map((problem, idx) => (
               <a className="popup-card problem" href={problem.link} key={idx}>
-                <p className="problem-title">Problems</p>
+                <p className="problem-title">{problem.title}</p>
                 <p
                   className="problem-name"
                   style={{

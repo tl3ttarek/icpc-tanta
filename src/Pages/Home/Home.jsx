@@ -6,6 +6,8 @@ import HeroSection from "../../components/heroSection/HeroSection";
 
 import GallerySection from "../../components/GallerySection/GallerySection";
 import CTA from "../../components/CTA/CTA";
+import AboutSection from "../../components/aboutSection/AboutSection";
+import TrainingSection from "../../components/trainingSection/TrainingSection";
 
 const Home = () => {
   return (
@@ -15,11 +17,10 @@ const Home = () => {
         <HeroSection />
       </header>
       <main>
-
-      {/*<AboutSection />
-        <AboutSection />*/}
+        <AboutSection />
+        <TrainingSection />
         <GallerySection />
-        <CTA/>
+        <CTA />
       </main>
     </div>
   );
