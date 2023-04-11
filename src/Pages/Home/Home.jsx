@@ -3,8 +3,9 @@ import React from "react";
 import "../../styles/global.css";
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/heroSection/HeroSection";
-import AboutSection from "../../components/aboutSection/AboutSection";
-import TrainingSection from "../../components/trainingSection/TrainingSection";
+
+import GallerySection from "../../components/GallerySection/GallerySection";
+import CTA from "../../components/CTA/CTA";
 
 const Home = () => {
   return (
@@ -14,10 +15,11 @@ const Home = () => {
         <HeroSection />
       </header>
       <main>
-        <AboutSection />
-        <TrainingSection />
-        {/* <GallerySection />
-        <CTASection /> */}
+
+      {/*<AboutSection />
+        <AboutSection />*/}
+        <GallerySection />
+        <CTA/>
       </main>
     </div>
   );
